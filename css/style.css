@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "Ivan";
+    src: url('../fuentes/Jersey10-Regular.ttf') format('truetype');
+}
+
+
+
+
+
+
+body{
+    background-image: url("../src/img/background_pixel.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1{
+    font-family: 'Ivan';
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.titulop1{
+    font-size: 250%;
+    color: #E37B44;
+    text-align: center;
+    left: 150px;
+    margin:0;
+}
+
+.titulop2{
+    font-size: 250%;
+    color: #6B549A;
+    text-align: center;
+    left: 150px;
+    margin:0;
+}
+
+
+
+.portal1 {
+    width: 300px;
+    height: auto;
+    left: 150px;
+    bottom: 10px;
+    object-fit: contain;
+}
+
+.portal2 {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    left: 750px;
+    bottom: 10px;
+    object-fit: contain;
+}
+
+.Texto-portal1 {
+    font-family: 'Ivan';
+    font-size: 25px;
+    color: #E37B44;
+    text-align: center;
+    left: 150px;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Texto-portal2{
+    position: absolute;
+    font-family: 'Ivan';
+    font-size: 25px;
+    color: #E37B44;
+    text-align: center;
+    left: 150px;
+    bottom: 650px;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
