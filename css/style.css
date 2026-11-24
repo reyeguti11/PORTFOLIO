@@ -3,95 +3,88 @@
     src: url('../fuentes/Jersey10-Regular.ttf') format('truetype');
 }
 
+* {
+    box-sizing: border-box;
+}
 
-
-
-
-
-body{
+body {
+    min-height: 100vh;
+    margin: 0;
     background-image: url("../src/img/background_pixel.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
-    overflow: hidden;
 }
 
-h1{
-    font-family: 'Ivan';
-    font-size: 50px;
+h1 {
+    margin: 28px 0 0;
+    font-family: 'Ivan', sans-serif;
+    font-size: clamp(3.5rem, 8vw, 5rem);
     text-align: center;
-    margin-top: 50px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.titulop1{
-    font-size: 250%;
+.titulop1 {
     color: #E37B44;
-    text-align: center;
-    left: 150px;
-    margin:0;
 }
 
-.titulop2{
-    font-size: 250%;
+.titulop2 {
     color: #6B549A;
+}
+
+main {
+    width: min(100% - 32px, 900px);
+    min-height: calc(100vh - 150px);
+    margin: 120px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(24px, 8vw, 100px);
+}
+
+.portal {
+    display: flex;
+    flex: 1 1 0;
+    max-width: 300px;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.portal p {
+    margin: 0;
+    padding: 4px 18px;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-family: 'Ivan', sans-serif;
+    font-size: clamp(1.8rem, 4vw, 2.25rem);
     text-align: center;
-    left: 150px;
-    margin:0;
-}
-
-
-
-.portal1 {
-    width: 300px;
-    height: auto;
-    left: 150px;
-    bottom: 10px;
-    object-fit: contain;
-}
-
-.portal2 {
-    position: absolute;
-    width: 300px;
-    height: auto;
-    left: 750px;
-    bottom: 10px;
-    object-fit: contain;
 }
 
 .Texto-portal1 {
-    font-family: 'Ivan';
-    font-size: 25px;
     color: #E37B44;
-    text-align: center;
-    left: 150px;
-    margin: 0;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.Texto-portal2{
-    position: absolute;
-    font-family: 'Ivan';
-    font-size: 25px;
-    color: #E37B44;
-    text-align: center;
-    left: 150px;
-    bottom: 650px;
-    margin: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+.Texto-portal2 {
+    color: #6B549A;
+}
+
+.portal img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 560px) {
+    main {
+        min-height: calc(100vh - 115px);
+        gap: 16px;
+    }
+
+    .portal {
+        gap: 8px;
+    }
+
+    .portal p {
+        padding: 4px 8px;
+    }
 }
